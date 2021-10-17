@@ -62,7 +62,7 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],
+            "hosts": [('https://messengerchatting.onrender.com/', 6379)],
         },
     },
 }
@@ -115,7 +115,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR , "static")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR , "static")
 ]
