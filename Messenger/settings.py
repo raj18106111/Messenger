@@ -10,7 +10,7 @@ SECRET_KEY = 'django-insecure-qm98z*mspy_qr0u_w%8l9qka6@bt45lrruz@uxgpm=la(wt184
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://messengerchatting.onrender.com/','127.0.0.1:8000']
 
 
 # Application definition
