@@ -45,9 +45,9 @@
     const roomname = '{{roomname}}'
     const user = '{{user}}'
     const friend = '{{friend}}'
-     const ws = new WebSocket('ws://'+window.location.host+'/wss/room/{{roomname}}/')
-     const wsstatus = new WebSocket('ws://'+window.location.host+'/wss/status/')
-     const wstyping = new WebSocket('ws://'+window.location.host+'/wss/typing/')
+     const ws = new WebSocket('wss://'+window.location.host+'/wss/room/{{roomname}}/')
+     const wsstatus = new WebSocket('wss://'+window.location.host+'/wss/status/')
+     const wstyping = new WebSocket('wss://'+window.location.host+'/wss/typing/')
 
       wstyping.onopen = () =>{
      }
